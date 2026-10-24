@@ -1,0 +1,15 @@
+{
+  "name": "Modulo 12 - Docker + API de sensacion termica",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "hostRequirements": {
+    "cpus": 2
+  },
+  "forwardPorts": [8000],
+  "portsAttributes": {
+    "8000": {
+      "label": "API sensacion termica",
+      "onAutoForward": "notify"
+    }
+  },
+  "postCreateCommand": "pip install -r app/requirements.txt"
+}

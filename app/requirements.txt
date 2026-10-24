@@ -1,0 +1,9 @@
+# Versiones del entorno donde se entrenó el modelo (no cambiar)
+scikit-learn==1.6.1
+numpy==2.1.3
+joblib==1.6.0
+pandas==2.2.3
+
+# Servidor de la API
+fastapi==0.161.1
+uvicorn==0.54.0

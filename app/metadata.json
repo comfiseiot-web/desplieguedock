@@ -1,0 +1,31 @@
+{
+  "nombre": "Sensación térmica a partir de temperatura y humedad",
+  "modelo": "Polinómica grado 2",
+  "entradas": {
+    "temperatura": {
+      "unidad": "°C",
+      "min": 15.1,
+      "max": 35.0
+    },
+    "humedad": {
+      "unidad": "%",
+      "min": 35.0,
+      "max": 95.0
+    }
+  },
+  "salida": {
+    "nombre": "sensacion_termica",
+    "unidad": "°C"
+  },
+  "metricas_prueba": {
+    "MAE (°C)": 0.362,
+    "R²": 0.9973
+  },
+  "entorno_entrenamiento": {
+    "python": "3.13.16",
+    "scikit-learn": "1.6.1",
+    "numpy": "2.1.3",
+    "joblib": "1.6.0"
+  },
+  "fecha_entrenamiento": "2026-10-23 22:10 UTC"
+}
